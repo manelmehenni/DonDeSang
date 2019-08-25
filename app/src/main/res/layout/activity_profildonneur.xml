@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blood2"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfilDonneur">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/profil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rouge"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:alpha="0.9">
+
+            <ImageButton
+                android:id="@+id/backAccueil"
+                android:layout_width="@dimen/ic_width"
+                android:layout_height="@dimen/ic_height"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_home_white_24dp"
+                android:contentDescription="TODO" />
+
+            <SearchView
+                android:id="@+id/search_profil_perso"
+                android:layout_width="@dimen/search_width"
+                android:layout_height="@dimen/search_height"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/border_acceuil"
+                />
+
+            <ImageButton
+                android:id="@+id/notif_profil_perso_donneur"
+                android:layout_width="@dimen/ic_width"
+                android:layout_height="@dimen/ic_height"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_notifications_white_24dp" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/milieu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/pb_adherent"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/pseudo_prfl_don"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/name_border_profil"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:id="@+id/ttt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="@dimen/cadre_mar"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/carre_fond"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:alpha="0.5"
+                        android:background="#E2DFDF" />
+
+                    <TextView
+                        android:id="@+id/modifier_profil_perso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_mode_edit_black_24dp"
+                        android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+                        android:drawableTint="@color/rouge"
+                        android:layout_alignParentTop="true"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="#000000"
+                        android:text="@string/modifier_le_profil"
+                        android:textSize="@dimen/paragraphe" />
+
+                    <TextView
+                        android:id="@+id/Annonces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_annonce"
+                        android:drawableLeft="@drawable/ic_annonce"
+                        android:drawableTint="@color/rouge"
+                        android:layout_below="@id/modifier_profil_perso"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/afficher_les_annonces"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/PbAnnonces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_annonce"
+                        android:drawableLeft="@drawable/ic_annonce"
+                        android:drawableTint="@color/rouge"
+                        android:layout_below="@id/Annonces"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/afficher_mes_annonces"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/PAnnonces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:drawableStart="@drawable/ic_annonce"
+                        android:drawableLeft="@drawable/ic_annonce"
+                        android:drawableTint="@color/rouge"
+                        android:layout_below="@id/PbAnnonces"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/PublierAnnonce"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/centres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:layout_below="@+id/PAnnonces"
+                        android:drawableStart="@drawable/ic_centre"
+                        android:drawableLeft="@drawable/ic_centre"
+                        android:drawableTint="@color/rouge"
+                        android:focusable="true"
+                        android:paddingStart="5dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/afficher_les_centres_de_dons"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"
+                        android:paddingEnd="0dp" />
+
+                    <TextView
+                        android:id="@+id/Messagerie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:clickable="true"
+                        android:layout_below="@id/centres"
+                        android:drawableStart="@drawable/ic_messagerie"
+                        android:drawableLeft="@drawable/ic_messagerie"
+                        android:drawableTint="@color/rouge"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:text="@string/messagerie"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"/>
+
+
+                    <TextView
+                        android:id="@+id/déconnecter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:clickable="true"
+                        android:layout_below="@id/Messagerie"
+                        android:drawableStart="@drawable/ic_close_black_24dp"
+                        android:drawableLeft="@drawable/ic_close_black_24dp"
+                        android:drawableTint="@color/rouge"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:paddingStart="5dp"
+                        android:text="Deconnexion"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:id="@+id/supprimer_compte_perso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true"
+                        android:layout_below="@id/déconnecter"
+                        android:drawableStart="@drawable/ic_corbeille"
+                        android:drawableLeft="@drawable/ic_corbeille"
+                        android:drawableTint="@color/rouge"
+                        android:focusable="true"
+                        android:paddingEnd="0dp"
+                        android:paddingStart="5dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="5dp"
+                        android:text="Supprimer ce compte"
+                        android:textSize="@dimen/paragraphe"
+                        android:textColor="#000000"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hand">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Modifier le profil"
+            android:textColor="@color/rouge"
+            android:textSize="@dimen/size_title"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:id="@+id/ooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/cadre_mar"
+            android:background="@drawable/ajout_border_modif"
+            android:gravity="center"
+            android:alpha="0.9"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/nom_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentTop="true"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/prénom_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:hint="Prénom"
+                android:inputType="textPersonName"
+                android:layout_toRightOf="@+id/nom_modifié"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="50dp"
+              />
+
+            <EditText
+                android:id="@+id/pseudo_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:hint="Nom utilisateur"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/taille_modifiée"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true" />
+            <EditText
+                android:id="@+id/email_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:layout_below="@+id/pseudo_modifié"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/dn_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:focusable="true"
+                android:hint="Date de naissance"
+                android:inputType="datetime"
+                android:layout_below="@+id/prénom_modifié"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true" />
+            <EditText
+                android:id="@+id/adresse_modifiée"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:focusable="true"
+                android:hint="@string/adresse"
+                android:inputType="text"
+                android:layout_below="@+id/dn_modifié"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:id="@+id/gp_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:focusable="true"
+                android:hint="@string/groupesanguin"
+                android:inputType="text"
+                android:layout_below="@+id/adresse_modifiée"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true" />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/adresse_modifiée"
+                android:layout_toRightOf="@+id/gp_modifié"/>
+
+            <EditText
+                android:id="@+id/taille_modifiée"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"
+                android:hint="@string/taille"
+                android:inputType="number"
+                android:layout_below="@+id/gp_modifié"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:id="@+id/poids_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:hint="@string/poids"
+                android:inputType="number"
+                android:layout_below="@+id/gp_modifié"
+                android:layout_toRightOf="@+id/taille_modifiée"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="50dp"
+                android:layout_toEndOf="@+id/taille_modifiée" />
+
+
+
+            <EditText
+                android:id="@+id/num_tél_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignParentStart="true"
+                android:hint="Numéro de téléphone"
+                android:inputType="phone"
+                android:layout_below="@+id/email_modifié"
+                android:backgroundTint="@color/rouge"
+                android:textSize="@dimen/paragraphe"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp" />
+
+            <RadioGroup
+                android:id="@+id/sexe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/num_tél_modifié"
+                android:layout_gravity="center"
+                android:alpha="0.9"
+                android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="0.9"
+                    android:paddingStart="10dp"
+                    android:text="Sexe"
+                    tools:layout_editor_absoluteX="103dp"
+                    tools:layout_editor_absoluteY="194dp"
+                    android:textSize="@dimen/paragraphe"
+                    android:paddingLeft="10dp" />
+
+                <RadioButton
+                    android:id="@+id/sexefc_modifié"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.9"
+                    android:backgroundTint="@color/rouge"
+                    android:text="Femme"
+                    android:onClick="RadioButtonSexe1"
+                    android:textSize="@dimen/paragraphe" />
+
+                <RadioButton
+                    android:id="@+id/sexehc_modifié"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:alpha="0.9"
+                    android:backgroundTint="@color/rouge"
+                    android:text="Homme"
+                    android:onClick="RadioButtonSexe1"
+                    android:textSize="@dimen/paragraphe" />
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/mdp_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nom_modifié"
+                android:layout_below="@+id/sexe"
+                android:inputType="textPassword"
+                android:backgroundTint="@color/rouge"
+                android:layout_marginStart="10dp"
+                android:hint="Nouveau mot de passe"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/paragraphe"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignLeft="@+id/nom_modifié" />
+
+            <EditText
+                android:id="@+id/confirmé_modifié"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nom_modifié"
+                android:backgroundTint="@color/rouge"
+                android:hint="Confirmer mot de passe"
+                android:layout_alignParentStart="true"
+                android:inputType="textPassword"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/mdp_modifié"
+                android:textSize="@dimen/paragraphe"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignLeft="@+id/nom_modifié" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/valider_modif_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="@color/rouge"
+                android:gravity="center"
+                android:text="Valider"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/btn_text"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/annuler_modif_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:background="#AAAAAA"
+                android:gravity="center"
+                android:text="Annuler"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/btn_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

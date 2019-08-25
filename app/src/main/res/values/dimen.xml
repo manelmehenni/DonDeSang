@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextViews -->
+    <dimen name="size_title">30sp</dimen>
+    <dimen name="size_subtitle">23sp</dimen>
+    <dimen name="paragraphe">20sp</dimen>
+    <dimen name="padding_title">40dip</dimen>
+    <!-- Text Size -->
+    <dimen name="size_text">20sp</dimen>
+    <!-- Images -->
+    <dimen name="size_image_height">200dip</dimen>
+    <dimen name="size_image_width">@dimen/size_image_height</dimen>
+    <!-- Icones -->
+    <dimen name="ic_width">50dip</dimen>
+    <dimen name="ic_height">50dip</dimen>
+    <!-- Search View -->
+    <dimen name="search_width">260dip</dimen>
+    <dimen name="search_height">50dip</dimen>
+    <!-- AppCompatEditText -->
+    <dimen name="aec_width">260dip</dimen>
+    <dimen name="aec_height">50dip</dimen>
+    <dimen name="aec_pad">4dip</dimen>
+    <!-- Cadre -->
+    <dimen name="cadre_pad">20dip</dimen>
+    <dimen name="cadre_mar">20dip</dimen>
+    <dimen name="desc_pad">15dp</dimen>
+    <!-- Connexion -->
+    <dimen name="connex_mar">120dp</dimen>
+    <dimen name="connex_pad">20dp</dimen>
+    <dimen name="connex_width">300dp</dimen>
+    <dimen name="btn_height">60dp</dimen>
+    <!-- Boutons -->
+    <dimen name="btn_text">20sp</dimen>
+    <dimen name="btn_marge">100dp</dimen>
+    <!-- Commentaires -->
+    <dimen name="margS_comm">20dip</dimen>
+    <dimen name="margE_comm">40dip</dimen>
+    <dimen name="comm_width">100dip</dimen>
+    <!-- event -->
+    <dimen name="text_event_width">210dp</dimen>
+    <dimen name="text_event_height">40dp</dimen>
+    <dimen name="event_margT">10dp</dimen>
+    <!-- prog -->
+    <dimen name="text_date">100dp</dimen>
+    <!-- ProfilDonneur -->
+    <dimen name="carre_fond">450dp</dimen>
+    <dimen name="carre_fondR">400dp</dimen>
+    <dimen name="carre_fondC">350dp</dimen>
+    <dimen name="pdp">100dp</dimen>
+    <dimen name="graph_view">300dp</dimen>
+
+</resources>

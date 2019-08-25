@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_compte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hand"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    tools:context=".MesAnnonces">
+
+    <TextView
+        android:id="@+id/custom_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_liste"
+        android:drawableLeft="@drawable/ic_liste"
+        android:drawableTint="@color/rouge"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Mes annonces"
+        android:textColor="@color/rouge"
+        android:textSize="@dimen/size_title" />
+
+    <TextView
+        android:id="@+id/aucune_annonce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Vous n'avez aucune annonce."
+        android:textColor="#666666"
+        android:textSize="@dimen/paragraphe"
+        android:layout_marginTop="50dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mes_annonces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hand">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="@string/PublierAnnonce"
+            android:textColor="@color/rouge"
+            android:textSize="@dimen/size_title" />
+
+        <RelativeLayout
+            android:id="@+id/ooo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/cadre_mar"
+            android:alpha="0.9"
+            android:background="@drawable/ajout_border_modif"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/nom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rouge"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/paragraphe" />
+
+            <EditText
+                android:id="@+id/prenom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/nom1"
+                android:autoText="false"
+                android:backgroundTint="@color/rouge"
+                android:hint="Prénom"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/paragraphe" />
+
+            <EditText
+                android:id="@+id/commune1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gp1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rouge"
+                android:focusable="true"
+                android:hint="@string/commune"
+                android:inputType="text"
+                android:textSize="@dimen/paragraphe" />
+            <EditText
+                android:id="@+id/adresse1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/commune1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rouge"
+                android:focusable="true"
+                android:hint="@string/adresse"
+                android:inputType="text"
+                android:textSize="@dimen/paragraphe" />
+
+            <EditText
+                android:id="@+id/gp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/prenom1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rouge"
+                android:focusable="true"
+                android:hint="@string/groupesanguin"
+                android:inputType="text"
+                android:textSize="@dimen/paragraphe" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/prenom"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/gp1" />
+
+
+            <EditText
+                android:id="@+id/num_tel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/adresse1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rouge"
+                android:hint="Numéro de téléphone"
+                android:inputType="phone"
+                android:textSize="@dimen/paragraphe" />
+
+            <EditText
+                android:id="@+id/email1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/num_tel1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/rouge"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/paragraphe" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:backgroundTint="@color/rouge"
+                android:gravity="center"
+                android:text="Valider"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/btn_text"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="70dp"
+                android:layout_marginLeft="70dp"
+                android:background="#AAAAAA"
+                android:gravity="center"
+                android:text="Annuler"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/btn_text"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

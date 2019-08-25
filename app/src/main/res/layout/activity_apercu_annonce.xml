@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hand"
+    tools:context=".ApercuAnnonceActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.9"
+        android:background="@color/rouge"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="@dimen/ic_width"
+            android:layout_height="@dimen/ic_height"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:src="@drawable/backk" />
+
+        <SearchView
+            android:id="@+id/search_profil_perso"
+            android:layout_width="@dimen/search_width"
+            android:layout_height="@dimen/search_height"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_acceuil" />
+
+        <ImageButton
+            android:id="@+id/notif_profil_perso_donneur"
+            android:layout_width="@dimen/ic_width"
+            android:layout_height="@dimen/ic_height"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_notifications_white_24dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cadre_mar"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/border_bold"
+                android:padding="@dimen/cadre_pad"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/nom2"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Nom"
+                    android:padding="5dp"
+                    android:textSize="@dimen/size_text" />
+
+                <TextView
+                    android:id="@+id/prenom2"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Prenom"
+                    android:layout_below="@+id/nom2"
+                    android:padding="5dp"
+                    android:textSize="@dimen/size_text" />
+                <TextView
+                    android:id="@+id/groupesanguin2"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Groupe Sanguin"
+                    android:layout_below="@+id/prenom2"
+                    android:padding="5dp"
+                    android:textSize="@dimen/size_text" />
+
+                <TextView
+                    android:id="@+id/Adresse2"
+                    android:layout_width="320dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/groupesanguin2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Adresse"
+                    android:padding="5dp"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/numtel"
+                    android:layout_width="320dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/Adresse2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Numéro de téléphone"
+                    android:padding="5dp"
+                    android:textSize="@dimen/size_text" />
+
+                <TextView
+                    android:id="@+id/email2"
+                    android:layout_width="320dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/numtel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Email"
+                    android:padding="5dp"
+                    android:textSize="@dimen/size_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/accepter"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/rouge"
+                    android:text="Accepter"
+                    android:textColor="#FFFF"
+                     />
+
+                <Button
+                    android:id="@+id/refuser"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/rouge"
+                    android:text="Refuser"
+                    android:textColor="#FFFF"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

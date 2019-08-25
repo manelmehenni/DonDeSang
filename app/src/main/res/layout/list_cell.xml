@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/cadre_mar"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/border_bold"
+    android:padding="@dimen/cadre_pad"
+    android:visibility="visible">>
+
+
+    <TextView
+        android:id="@+id/NOM"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Nom"
+        android:padding="5dp"
+        android:textSize="@dimen/size_text" />
+
+    <TextView
+        android:id="@+id/PRENOM"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Prenom"
+        android:layout_below="@+id/NOM"
+        android:padding="5dp"
+        android:textSize="@dimen/size_text" />
+    <TextView
+        android:id="@+id/GP"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Groupe Sanguin"
+        android:layout_below="@+id/PRENOM"
+        android:padding="5dp"
+        android:textSize="@dimen/size_text" />
+
+    <TextView
+        android:id="@+id/ADRESSE"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/GP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Adresse"
+        android:padding="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/NTEL"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/ADRESSE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Numéro de téléphone"
+        android:padding="5dp"
+        android:textSize="@dimen/size_text" />
+
+    <TextView
+        android:id="@+id/EMAIL"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/NTEL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:padding="5dp"
+        android:textSize="@dimen/size_text" />
+
+</RelativeLayout>
